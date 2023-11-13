@@ -533,4 +533,18 @@ a {
   border-radius: 0.75rem;
   border: 1px solid var(--main-colors-purple-3, #BE9FF6);
   background: var(--main-colors-purple-1, #E9DFFC);
+}
+.main_portfolio_button {
+  font-family: Gotham;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 1rem */
+  letter-spacing: -0.05rem;
+  text-transform: capitalize;
+  background: var(--main-colors-gray-4, #292929);
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  color: white;
+  border: none;
 }/*# sourceMappingURL=applications.css.map */
