@@ -88,27 +88,36 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0rem;
-  border-bottom: 2px solid rgba(243, 244, 246, 0.25);
 }
 .navbar__button {
-  color: #1F2937;
-  text-align: center;
-  font-family: "Anton", sans-serif;
+  padding: 0.75rem 1.5rem;
+  color: var(--color);
+  /* P3/Gotham/Book/Active/left */
+  font-family: Gotham;
   font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  padding: 1rem 2.00375rem 1rem 1.9375rem;
-  border-radius: 624.9375rem;
-  border: none;
-  opacity: 0.75;
-  background: #FFF;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 1rem */
+  letter-spacing: -0.05rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  background: var(--main-colors-gray-4, #292929);
+}
+@media (prefers-color-scheme: dark) {
+  .navbar__button {
+    background: var(--main-colors-purple-5, #925FF0);
+  }
 }
 .navbar__logo {
-  background-image: url("./img/Logo.svg");
-  width: 11.42562rem;
-  height: 2.5rem;
+  background-image: url("./img/light/Logo.svg");
+  width: 4.5625rem;
+  height: 1.6875rem;
   background-size: cover;
+}
+@media (prefers-color-scheme: dark) {
+  .navbar__logo {
+    background-image: url("./img/dark/Logo.svg");
+  }
 }
 @media (max-width: 860px) {
   .navbar__logo {
@@ -117,21 +126,13 @@ a {
 }
 .navbar__link {
   display: block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  transition: all 0.1s ease-in-out;
-}
-.navbar__link:hover {
-  font-size: 1rem;
+  font-family: Gotham;
+  font-size: 1.25rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.5rem;
-}
-.navbar__link:active {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 100%; /* 1.25rem */
+  letter-spacing: -0.0625rem;
+  color: var(--color);
 }
 .navbar__burger {
   display: none;
@@ -234,6 +235,7 @@ a {
 .navbar__menu {
   display: flex;
   align-items: center;
+  gap: 1.88rem;
 }
 @media (max-width: 860px) {
   .navbar__menu {
