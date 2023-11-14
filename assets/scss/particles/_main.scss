@@ -146,4 +146,42 @@
         }
     }
     
+
+    &_skills {
+        
+        &_h2 {
+            padding-bottom: 3.12rem;
+            font-family: $font;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 4rem */
+            text-transform: uppercase;
+            color: var(--text);
+        }
+
+        &_block {
+
+            display: flex;
+            gap: 1.25rem;
+
+            &_element {
+                display: flex;
+                padding: 2.5rem 3.125rem 3.75rem 2.5rem;
+                align-items: center;
+            }
+        }
+
+        &_img {
+            width: 13.75rem;
+            height: 13.75rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('./img/light/Graph.svg');
+
+            @media (prefers-color-scheme: dark) {
+                background-image: url('./img/dark/Graph.svg');
+            }
+        }
+    }
 }
