@@ -160,28 +160,110 @@
             color: var(--text);
         }
 
+        
         &_block {
-
-            display: flex;
-            gap: 1.25rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+                gap: 1.5rem;
+              
+              
+              @media (max-width: 600px) {
+                &_block {
+                  grid-template-columns: 1fr;
+                }
+              }
 
             &_element {
                 display: flex;
                 padding: 2.5rem 3.125rem 3.75rem 2.5rem;
+                gap: 1.25rem;
                 align-items: center;
+                border-radius: 0.625rem;
+                border: 1px solid var(--main-colors-gray-15, #737373);
+                background: var(--White, #FFF);
+                @media (prefers-color-scheme: dark) {
+                    border: 1px solid var(--main-colors-gray-15, #737373);
+                    background: var(--main-colors-gray-95, #010101);
+                }
             }
         }
 
+        &_text {
+            color: var(--color);
+        }
+
+        &_h3 {
+            padding-bottom: 1.25rem;
+        }
+
         &_img {
-            width: 13.75rem;
-            height: 13.75rem;
+            min-width: 13.75rem;
+            min-height: 13.75rem;
             background-repeat: no-repeat;
             background-size: cover;
             background-image: url('./img/light/Graph.svg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 2.25rem */
+            letter-spacing: -0.1125rem;
 
             @media (prefers-color-scheme: dark) {
                 background-image: url('./img/dark/Graph.svg');
             }
+        }
+    }
+
+    &_about {
+        height: 50rem;
+        background-image: url('./img/light/about.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 12.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (prefers-color-scheme: dark) {
+            background-image: url('./img/dark/about.jpg');
+
+            &_block {
+                display: flex;
+                gap: 3.75rem;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &_h2 {
+            color: var(--White, #FFF);
+            font-family: Poppins;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 105%; /* 3.15rem */
+            letter-spacing: -0.15rem;
+        }
+
+        &_text {
+            color: var(--White, #FFF);
+            font-family: Poppins;
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 105%; /* 3.15rem */
+            letter-spacing: -0.15rem;
+            width: 68.375rem;
+        }
+
+        &_img {
+            background-image: url('./img/shield.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 4.5rem;
+            height: 5.375rem;
         }
     }
 }
