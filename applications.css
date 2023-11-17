@@ -657,4 +657,53 @@ a {
   background-size: cover;
   width: 4.5rem;
   height: 5.375rem;
+}
+.main_about_me_title {
+  display: flex;
+  align-items: center;
+  gap: 2.37rem;
+}
+.main_about_me_block {
+  display: flex;
+  justify-content: space-between;
+}
+.main_about_me_text_block {
+  display: flex;
+}
+.main_about_me_h2 {
+  font-family: Anton;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--color);
+}
+.main_about_me_zig_zag {
+  background-image: url("./img/light/Zig Zag.svg");
+  width: 16.67138rem;
+  height: 2.1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  stroke-width: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  .main_about_me_zig_zag {
+    background-image: url("./img/dark/Zig Zag.svg");
+  }
+}
+.main_about_me_text {
+  width: 41.5625rem;
+  color: var(--color);
+  font-family: Gotham Black;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 2.25rem */
+  letter-spacing: -0.1125rem;
+  padding-top: 4.75rem;
+}
+.main_about_me_img_1 {
+  background-image: url("./img/baby.jpg");
+  width: 46.625rem;
+  height: 33.125rem;
 }/*# sourceMappingURL=applications.css.map */
