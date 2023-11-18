@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --bg: #fff;
   --color: #292929;
@@ -93,7 +95,7 @@ a {
   padding: 0.75rem 1.5rem;
   color: var(--color);
   /* P3/Gotham/Book/Active/left */
-  font-family: Gotham;
+  font-family: "Figtree", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -101,6 +103,7 @@ a {
   letter-spacing: -0.05rem;
   text-transform: capitalize;
   border-radius: 0.25rem;
+  border: none;
   background: var(--main-colors-gray-4, #292929);
 }
 @media (prefers-color-scheme: dark) {
@@ -126,7 +129,7 @@ a {
 }
 .navbar__link {
   display: block;
-  font-family: Gotham;
+  font-family: "Figtree", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -391,7 +394,7 @@ a {
   font-size: 1.25rem;
   width: 100%;
   color: var(--White, #FFF);
-  font-style: normal;
+  font-style: "Figtree", sans-serif;
   font-weight: 400;
   line-height: 100%; /* 1.25rem */
   letter-spacing: -0.0625rem;
@@ -462,10 +465,10 @@ a {
   padding-bottom: 1.31rem;
 }
 .main_stats_h3 {
-  font-family: Gotham Black;
+  font-family: "Figtree", sans-serif;
   font-size: 2.25rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 100%; /* 2.25rem */
   letter-spacing: -0.1125rem;
   color: var(--stats);
@@ -484,7 +487,7 @@ a {
   color: var(--text);
 }
 .main_portfolio_h3 {
-  font-family: Gotham;
+  font-family: "Figtree", sans-serif;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 700;
@@ -526,7 +529,7 @@ a {
 .main_portfolio_link {
   padding: 0.25rem 0.5rem;
   color: var(--main-colors-purple-6, #784DC7);
-  font-family: Gotham;
+  font-family: "Figtree", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -537,7 +540,7 @@ a {
   background: var(--main-colors-purple-1, #E9DFFC);
 }
 .main_portfolio_button {
-  font-family: Gotham;
+  font-family: "Figtree", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -585,11 +588,28 @@ a {
     background: var(--main-colors-gray-95, #010101);
   }
 }
+.main_skills_p {
+  color: var(--color);
+  font-family: "Figtree", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.0625rem;
+}
 .main_skills_text {
   color: var(--color);
 }
 .main_skills_h3 {
   padding-bottom: 1.25rem;
+  color: var(--color);
+  /* H1/Gotham/Black/Active/Center-Left */
+  font-family: "Figtree", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 2.25rem */
+  letter-spacing: -0.1125rem;
 }
 .main_skills_img {
   min-width: 13.75rem;
@@ -634,7 +654,7 @@ a {
 }
 .main_about_h2 {
   color: var(--White, #FFF);
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-style: normal;
   font-weight: 600;
@@ -643,7 +663,7 @@ a {
 }
 .main_about_text {
   color: var(--White, #FFF);
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-style: italic;
   font-weight: 700;
@@ -658,20 +678,39 @@ a {
   width: 4.5rem;
   height: 5.375rem;
 }
+.main_about_me {
+  display: flex;
+  justify-content: center;
+}
+.main_about_me_container {
+  width: 96.3125rem;
+}
 .main_about_me_title {
   display: flex;
   align-items: center;
   gap: 2.37rem;
+  padding-bottom: 4.75rem;
 }
 .main_about_me_block {
   display: flex;
   justify-content: space-between;
 }
+.main_about_me_block_2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_about_me_block_3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .main_about_me_text_block {
   display: flex;
 }
 .main_about_me_h2 {
-  font-family: Anton;
+  font-family: "Anton", sans-serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
@@ -694,16 +733,99 @@ a {
 .main_about_me_text {
   width: 41.5625rem;
   color: var(--color);
-  font-family: Gotham Black;
+  font-family: "Figtree", sans-serif;
   font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 100%; /* 2.25rem */
   letter-spacing: -0.1125rem;
-  padding-top: 4.75rem;
+}
+.main_about_me_text_span_1 {
+  background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_about_me_text_span_2 {
+  background: var(--Green_Blue, linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (prefers-color-scheme: light) {
+  .main_about_me_text_span_2 {
+    background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.main_about_me_text_span_3 {
+  background: var(--Blue_Purple, linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (prefers-color-scheme: light) {
+  .main_about_me_text_span_3 {
+    background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.main_about_me_text_span_4 {
+  background: linear-gradient(90deg, #FFE76A 18.02%, #65C8FF 30%, #65C8FF 54.18%, #65C8FF 70.09%, #F00 20.1%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main_about_me_img_1 {
   background-image: url("./img/baby.jpg");
   width: 46.625rem;
   height: 33.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_about_me_img_1_element {
+  width: 24.1875rem;
+  height: 25.625rem;
+  background-image: url("./img/Spiral.svg");
+}
+.main_about_me_img_2 {
+  background-image: url("./img/kid.jpg");
+  width: 49.625rem;
+  height: 33.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_about_me_img_2_element {
+  width: 31.0625rem;
+  height: 31.0625rem;
+  background-image: url("./img/Dawn.svg");
+}
+.main_about_me_img_3 {
+  background-image: url("./img/teen.jpg");
+  width: 46.6875rem;
+  height: 34.4375rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1.89rem 0 0;
+}
+.main_about_me_img_3_element {
+  width: 5.625rem;
+  height: 3.1875rem;
+  background-image: url("./img/Warm.svg");
+}
+
+.footer_fist_section {
+  display: flex;
+  justify-content: center;
+}
+.footer_fist_section_block {
+  width: 95.5rem;
+  height: 11.25rem;
+  border-radius: 0.9375rem;
+  background: var(--main-colors-purple-4, #A87FF3);
 }/*# sourceMappingURL=applications.css.map */

@@ -1,0 +1,14 @@
+.footer {
+
+    &_fist_section {
+        display: flex;
+        justify-content: center;
+
+        &_block {
+            width: 95.5rem;
+            height: 11.25rem;
+            border-radius: 0.9375rem;
+            background: var(--main-colors-purple-4, #A87FF3);
+        }
+    }
+}
