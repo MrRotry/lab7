@@ -1,14 +1,111 @@
 .footer {
+    background: var(--main-colors-gray-4, #292929);
+    &_text {
+        color: #FFF;
 
+        font-family: $font2;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.06875rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: -6rem;
+    }
     &_fist_section {
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 5.625rem;
 
         &_block {
             width: 95.5rem;
             height: 11.25rem;
             border-radius: 0.9375rem;
             background: var(--main-colors-purple-4, #A87FF3);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
         }
+    }
+    
+    &_frame1 {
+        width: 9.375rem;
+        height: 7.8125rem;
+        background-image: url('./img/Frame36.svg');
+        position: relative;
+        left: -18.56rem;
+    }
+
+    &_frame2 {
+        width: 9.375rem;
+        height: 7.8125rem;
+        background-image: url('./img/Frame35.svg');
+        position: relative;
+        top: -3.414rem;
+
+    }
+
+    &_img {
+        background-image: url('./img/photo_mode.png');
+        width: 17.5625rem;
+        height: 24.8125rem;
+        position: relative;
+        left: -2.09rem;
+        z-index: 2;
+        background-position: bottom;
+        background-size: cover;
+    }
+
+
+    &_second_sectoin {
+        width: 100%;
+        padding-top: 9.02rem;
+        padding-bottom: 2.94rem;
+        background: var(--main-colors-gray-4, #292929);
+        height: 17.6875rem;
+        
+        &_container {
+            display: flex;
+            height: 5.625rem;
+            padding-bottom: 1.875rem;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--main-colors-gray-1, #E6E6E6);
+        }
+
+        &_block {
+            display: flex;
+            align-items: center;
+            width: 95.5rem;
+            justify-content: space-between;
+        }
+    }
+
+    &_logo {
+        background-image: url('./img/Logo.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10.26563rem;
+        height: 3.79688rem;
+    }
+
+    &_link_block {
+        display: flex;
+        gap:1.88rem
+    }
+
+    &_link{
+        color: var(--White, #FFF);
+        font-family: $font2;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.0625rem;
     }
 }
