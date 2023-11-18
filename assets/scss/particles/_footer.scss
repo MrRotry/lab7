@@ -15,13 +15,35 @@
         justify-content: center;
         position: relative;
         left: -6rem;
+        @media (max-width: 1480px) {
+            left: -5rem;
+        }
+        @media (max-width: 1380px) {
+            left: -2rem;
+            width: 29.875rem;
+        }
+        @media (max-width: 880px) {
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 100%; /* 0.75rem */
+            letter-spacing: -0.0375rem;
+            text-transform: capitalize;
+            left: 0; 
+        }
+        @media (max-width: 730px) {
+            font-size: 0.75rem;
+            width: 12.9375rem;
+        }
     }
     &_fist_section {
         display: flex;
         justify-content: center;
         position: relative;
         top: 5.625rem;
-
+        @media (max-width: 880px) {
+            top: 3.5rem
+        }
         &_block {
             width: 95.5rem;
             height: 11.25rem;
@@ -30,6 +52,22 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+            @media (max-width: 1700px) {
+                width: 90.5rem;
+            }
+            @media (max-width: 1480px) {
+                width: 85.5rem;
+            }
+            @media (max-width: 1380px) {
+                width: 54rem;
+            }
+            @media (max-width: 880px) {
+                width: 44rem;
+                height: 7rem;
+            }
+            @media (max-width: 730px) {
+                width: 24rem;
+            }
         }
     }
     
@@ -39,6 +77,18 @@
         background-image: url('./img/Frame36.svg');
         position: relative;
         left: -18.56rem;
+        @media (max-width: 1700px) {
+            left: -17.13rem;
+        }
+        @media (max-width: 1480px) {
+            left: -16.2rem;
+        }
+        @media (max-width: 1380px) {
+            left: -14.3rem;
+        }
+        @media (max-width: 880px) {
+            display: none;
+        }
     }
 
     &_frame2 {
@@ -47,7 +97,12 @@
         background-image: url('./img/Frame35.svg');
         position: relative;
         top: -3.414rem;
-
+        @media (max-width: 880px) {
+            background-image: url('./img/Frame_mobil.svg');
+            width: 5.175rem;
+            height: 4.3125rem;
+            top: -2.7rem;
+        }
     }
 
     &_img {
@@ -59,6 +114,16 @@
         z-index: 2;
         background-position: bottom;
         background-size: cover;
+        @media (max-width: 1380px) {
+            left: 0rem;
+        }
+        @media (max-width: 880px) {
+            background-image: url('./img/photo-model-mobil.png');
+            display: flex;
+            width: 8.4375rem;
+            height: 11.875rem;
+            left: -0.75rem;
+        }
     }
 
 
@@ -68,7 +133,11 @@
         padding-bottom: 2.94rem;
         background: var(--main-colors-gray-4, #292929);
         height: 17.6875rem;
-        
+        @media (max-width: 730px) {
+            height: 18.75rem;
+            padding-top: 6.69rem;
+            padding-bottom: 2.62rem;
+        }
         &_container {
             display: flex;
             height: 5.625rem;
@@ -76,6 +145,9 @@
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid var(--main-colors-gray-1, #E6E6E6);
+            @media (max-width: 730px) {
+                height: 8.75rem;
+            }
         }
 
         &_block {
@@ -83,6 +155,24 @@
             align-items: center;
             width: 95.5rem;
             justify-content: space-between;
+            @media (max-width: 1700px) {
+                width: 90.5rem;
+            }
+            @media (max-width: 1480px) {
+                width: 85.5rem;
+            }
+            @media (max-width: 1380px) {
+                width: 54rem;
+            }
+            @media (max-width: 880px) {
+                width: 44rem;
+            }
+            @media (max-width: 730px) {
+                width: 24rem;
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+            
         }
     }
 

@@ -19,9 +19,6 @@
             }
         }
 
-        &_element {
-            
-        }
 
         &_figure {
             width: 5rem;
@@ -29,6 +26,9 @@
             background-image: url('./img/light/Dawn.svg');
             @media (prefers-color-scheme: dark) {
                 background-image: url('./img/dark/Dawn.svg');
+            }
+            @media (max-width:1080px) {
+                display: none;
             }
         }
     
@@ -41,6 +41,10 @@
             text-transform: uppercase;
             color: var(--stats);
             padding-bottom: 1.31rem;
+            @media (max-width:1080px) {
+                font-size: 4rem;
+                text-align: center;
+            }
         }
 
         &_h3 {
@@ -51,11 +55,13 @@
             line-height: 100%; /* 2.25rem */
             letter-spacing: -0.1125rem;
             color: var(--stats);
+            @media (max-width:1080px) {
+                font-size: 1.375rem;
+                text-align: center;
+                font-weight: 700;
+            }
         }
         
-        &_figre {
-
-        }
     }
 
 
@@ -163,15 +169,18 @@
         
         &_block {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
-                gap: 1.5rem;
-              
-              
-              @media (max-width: 600px) {
-                &_block {
-                  grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+                gap: 1.5rem; 
+                @media (max-width: 1600px) {
+                    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
                 }
-              }
+                @media (max-width: 1400px) {
+                    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+                }
+                @media (max-width: 1380px) {
+                    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+                }
+                
 
             &_element {
                 display: flex;
@@ -262,6 +271,13 @@
             font-weight: 600;
             line-height: 105%; /* 3.15rem */
             letter-spacing: -0.15rem;
+            @media (max-width: 1380px) {
+                font-size: 2.5rem;
+            }
+            @media (max-width: 880px) {
+                font-size: 2rem;
+            }
+            
         }
 
         &_text {
@@ -273,6 +289,14 @@
             line-height: 105%; /* 3.15rem */
             letter-spacing: -0.15rem;
             width: 68.375rem;
+            @media (max-width: 1380px) {
+                font-size: 2.5rem;
+                width: 54rem;
+            }
+            @media (max-width: 880px) {
+                font-size: 2rem;
+                width: 37.8rem;
+            }
         }
 
         &_img {
@@ -291,6 +315,11 @@
 
         &_container {
             width: 96.3125rem;
+            @media (max-width: 1600px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         &_title {
@@ -298,6 +327,14 @@
             align-items: center;
             gap: 2.37rem;
             padding-bottom: 4.75rem;
+            @media (max-width: 1380px) {
+                padding-bottom: 6.62rem;
+                gap: 1.06rem;
+            }
+            @media (max-width: 880px) {
+                padding-bottom: 3rem;
+                gap: 1.06rem;
+            }
         }
 
         &_block {
@@ -342,6 +379,17 @@
             @media (prefers-color-scheme: dark) {
                 background-image: url('./img/dark/Zig Zag.svg');
             }
+            @media (max-width: 1380px) {
+                background-image: url('./img/light/ZigZag_t.svg');
+                width: 6.3rem;
+                height: 2.25rem;
+                @media (prefers-color-scheme: dark) {
+                    background-image: url('./img/dark/ZigZag_t.svg');
+                }
+            }
+            @media (max-width: 880px) {
+                display: none;
+            }
         }
 
         &_text {
@@ -349,10 +397,24 @@
             color: var(--color);
             font-family: $font2;
             font-size: 2.25rem;
-            font-weight: 900;
+            font-weight: 700;
             line-height: 100%; /* 2.25rem */
             letter-spacing: -0.1125rem;
-
+            @media (max-width: 1600px) {
+                width: 37.784rem
+            }
+            @media (max-width: 1380px) {
+                font-size: 1.75rem;
+                width: 23.29925rem;
+            }
+            @media (max-width: 880px) {
+                font-size: 1.375rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%; /* 1.375rem */
+                letter-spacing: -0.06875rem;
+                width: 16.2rem;
+            }
             &_span_1 {
                 background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
                 background-clip: text;
@@ -399,14 +461,35 @@
             background-image: url('./img/baby.jpg');
             width: 46.625rem;
             height: 33.125rem;
+            background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-repeat: no-repeat;
 
+            @media (max-width: 1600px) {
+                width: 37.3rem;
+                height: 33.125rem;
+            }
+            @media (max-width: 1380px) {
+                width: 26.13725rem;
+                height: 33.125rem;
+                margin-left: 4.54rem;
+                background-position-x: 53%;
+            }
+            @media (max-width: 880px) {
+                width: 18.296075rem;
+                height: 23.1875rem;
+                margin-left: 3rem;
+                background-position-x: 53%;
+            }
             &_element {
                 width: 24.1875rem;
                 height: 25.625rem;
                 background-image: url('./img/Spiral.svg');
+                @media (max-width:1380px) {
+                    display: none;
+                }
             }
         }
 
@@ -414,14 +497,35 @@
             background-image: url('./img/kid.jpg');
             width: 49.625rem;
             height: 33.1875rem;
+            background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            background-repeat: no-repeat;
+            @media (max-width: 1600px) {
+                width: 39.7rem;
+                height: 33.125rem;
+                margin-right: 1.5rem
+            }
+            @media (max-width: 1380px) {
+                width: 27.8125rem;
+                height: 29.1875rem;
+                margin-right: 2.54rem;
+                background-position-x: 53%;
+            }
+            @media (max-width: 880px) {
+                width: 19.46875rem;
+                height: 20.43125rem;
+                margin-right: 2.1rem;
+                background-position-x: 53%;
+            }
             &_element {
                 width: 31.0625rem;
                 height: 31.0625rem;
                 background-image: url('./img/Dawn.svg');
+                @media (max-width:1380px) {
+                    display: none;
+                }
             }
         }
 
@@ -429,14 +533,39 @@
             background-image: url('./img/teen.jpg');
             width: 46.6875rem;
             height: 34.4375rem;
+            background-size: cover;
             display: flex;
             justify-content: flex-end;
             padding: 1rem 1.89rem 0 0;
-
+            background-repeat: no-repeat;
+            @media (max-width: 1600px) {
+                width: 37.35rem;
+                height: 33.125rem;
+            }
+            @media (max-width: 1380px) {
+                width: 26.1875rem;
+                height: 26.375rem;
+                margin-left: 4.91rem;
+                background-position-x: 53%;
+                padding: 6rem 1.02rem 0 0;
+            }
+            @media (max-width: 880px) {
+                width: 18.33125rem;
+                height: 18.4625rem;
+                margin-left: 3.2rem;
+                background-position-x: 53%;
+                padding: 6rem 1.02rem 0 0;
+            }
             &_element {
                 width: 5.625rem;
                 height: 3.1875rem;
                 background-image: url('./img/Warm.svg');
+                background-repeat: no-repeat;
+                @media (max-width: 1380px) {
+                    background-image: url('./img/Warm_2.svg');
+                    width: 3.15331rem;
+                    height: 3.1875rem
+                }
             }
         }
     }

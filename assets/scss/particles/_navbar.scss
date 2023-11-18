@@ -33,7 +33,7 @@
         @media (prefers-color-scheme: dark) {
             background-image: url('./img/dark/Logo.svg');
         }
-        @media (max-width: 860px) {
+        @media (max-width: 430px) {
             scale: 0.72507;
         }
     }
@@ -63,7 +63,7 @@
 
 .burger {
     display: none;
-    @media (max-width: 860px) {
+    @media (max-width: 430px) {
         display: flex;
         align-items: center;
     }
@@ -90,7 +90,7 @@
 
 .navbar__burger__label__block {
     display: none;
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         display: flex;
     }
 }
@@ -108,7 +108,7 @@
 }
 
 .navbar__link {
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         font-size: 2rem;
         font-style: normal;
         font-weight: 400;
@@ -118,7 +118,7 @@
 }
 
 .navbar__link:hover{
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         font-size: 2rem;
         font-style: normal;
         font-weight: 700;
@@ -148,7 +148,7 @@
     display: flex;
     align-items: center;
     gap: 1.88rem;
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         position: absolute;
         display: flex;
         align-items: center;
@@ -163,19 +163,19 @@
 }
 
 .navbar__link__first{
-    @media (max-width:860px) {
+    @media (max-width:430px) {
     padding-top: 2.25rem;
     }
 }
 
 #myCheckbox:not(:checked) ~ .navbar__menu {
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         animation: fadeOutUp 0.3s ease-in-out forwards;
     }
 }
 
 #myCheckbox:checked ~ .navbar__menu {
-    @media (max-width:860px) {
+    @media (max-width:430px) {
         animation: fadeIn 1s ease-in-out;
     }
 }

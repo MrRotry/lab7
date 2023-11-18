@@ -4,6 +4,9 @@
         display: flex;
         justify-content: space-between;
         padding-top: 3.75rem;
+        @media (max-width:1080px) {
+            justify-content: center;
+        }
     }
 
     &_container {
@@ -16,8 +19,24 @@
     }
 
     &_star {
-        @media (max-width: 1280px) {
+        background-image: url('./img/light/Portal.svg');
+        width: 10rem;
+        height: 10rem;
+        @media (max-width:1280px) {
+            background-size: cover;
+            width: 7rem;
+            height: 7rem;
+        }
+        @media (max-width:1180px) {
+            background-size: cover;
+            width: 5rem;
+            height: 5rem;
+        }
+        @media (max-width:1080px) {
             display: none;
+        }
+        @media (prefers-color-scheme: dark) {
+            background-image: url('./img/dark/Portal.svg');
         }
     }
 
@@ -33,9 +52,6 @@
         padding-bottom: 4.38rem;
     }
 
-    &_title_block {
-        
-    } 
 
     &_h1 {
         font-family: $font;
@@ -156,15 +172,9 @@
         background-position: 50%;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    &_star {
-        background-image: url('./img/light/Portal.svg');
-        width: 10rem;
-        height: 10rem;
-
-        @media (prefers-color-scheme: dark) {
-            background-image: url('./img/dark/Portal.svg');
+        @media (max-width:1080px) {
+            display: none;
         }
     }
+
 }
