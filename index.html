@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./applications.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>LabWork7</title>
 </head>
 
@@ -24,11 +22,11 @@
                     </div>
                 </div>
                 <div class="navbar__menu" id="navbarMenu">
-                    <a href="#" class="navbar__link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Home</a>
-                    <a href="#" class="navbar__link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Portfolio</a>
-                    <a href="#" class="navbar__link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Skills</a>
-                    <a href="#" class="navbar__link" data-aos="fade-up" data-aos-anchor-placement="center-bottom">About Me</a>
-                    <button class="navbar__button_2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Contact me</button>
+                    <a href="#" class="navbar__link">Home</a>
+                    <a href="#" class="navbar__link">Portfolio</a>
+                    <a href="#" class="navbar__link">Skills</a>
+                    <a href="#" class="navbar__link">About Me</a>
+                    <button class="navbar__button_2 navbar__link">Contact me</button>
                 </div>
                 <button class="navbar__button">Contact me</button>
             </div>
@@ -330,10 +328,7 @@
     </footer>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    //AOS
-    AOS.init();
 
-    //My_cringe_cod
     var checkbox = document.getElementById('myCheckbox');
     var burgerSpans = document.querySelectorAll('.burger_span');
 
@@ -346,6 +341,23 @@ document.addEventListener('DOMContentLoaded', function() {
             burgerSpans[0].style.transform = 'none';
             burgerSpans[1].style.opacity = '1';
             burgerSpans[2].style.transform = 'none';
+        }
+    });
+
+
+    var navbarLinks = document.querySelectorAll('.navbar__link');
+
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            navbarLinks.forEach(function(link, index) {
+                setTimeout(function() {
+                    link.classList.add('show');
+                }, index * 300);
+            });
+        } else {
+            navbarLinks.forEach(function(link) {
+                link.classList.remove('show');
+            });
         }
     });
 });

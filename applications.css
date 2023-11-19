@@ -234,6 +234,7 @@ a {
   height: 2rem;
   position: relative;
   left: 2rem;
+  z-index: 4;
 }
 
 .burger_bottom {
@@ -246,7 +247,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
-    padding-bottom: 1.88rem;
+    margin-bottom: 1.88rem;
   }
 }
 
@@ -256,7 +257,7 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
-    padding-bottom: 1.88rem;
+    margin-bottom: 1.88rem;
   }
 }
 
@@ -308,6 +309,17 @@ a {
   .navbar__link__first {
     padding-top: 2.25rem;
   }
+}
+
+.navbar__link {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.navbar__link.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 730px) {
