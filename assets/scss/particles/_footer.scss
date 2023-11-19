@@ -117,6 +117,7 @@
         z-index: 2;
         background-position: bottom;
         background-size: cover;
+        background-repeat: no-repeat;
         @media (max-width: 1380px) {
             left: 0rem;
         }
