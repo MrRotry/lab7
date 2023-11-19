@@ -75,6 +75,7 @@
         line-height: 100%; /* 1.25rem */
         letter-spacing: -0.0625rem;
         color: var(--color);
+
     }
 
     
@@ -196,6 +197,9 @@
         left: -1px;
         flex-direction: column;
         padding-top: 1.5rem;
+        @media (prefers-color-scheme: light) {
+            background: rgba(255, 255, 255, 0.685);
+        }
     }
 }
 
