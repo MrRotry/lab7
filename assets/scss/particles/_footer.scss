@@ -68,6 +68,9 @@
             @media (max-width: 730px) {
                 width: 24rem;
             }
+            @media (max-width: 390px) {
+                width: 19rem;
+            }
         }
     }
     
@@ -171,6 +174,9 @@
                 width: 24rem;
                 flex-direction: column;
                 gap: 2.5rem;
+            }
+            @media (max-width: 390px) {
+                width: 19rem;
             }
             
         }

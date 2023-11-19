@@ -46,7 +46,11 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
-
+@media (max-width: 390px) {
+  .grid_block {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 @media (min-width: 600px) {
   .grid_block {
     grid-template-columns: repeat(2, 1fr);
