@@ -111,6 +111,16 @@ a {
     padding: 3.125rem 1.375rem 1.875rem 1.375rem;
   }
 }
+.navbar__link {
+  display: block;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 1.25rem */
+  letter-spacing: -0.0625rem;
+  color: var(--color);
+}
 .navbar__button {
   padding: 0.75rem 1.5rem;
   color: #fff;
@@ -170,16 +180,6 @@ a {
   .navbar__logo {
     background-image: url("./img/dark/Logo.svg");
   }
-}
-.navbar__link {
-  display: block;
-  font-family: "Figtree", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 1.25rem */
-  letter-spacing: -0.0625rem;
-  color: var(--color);
 }
 .navbar__burger {
   display: none;
