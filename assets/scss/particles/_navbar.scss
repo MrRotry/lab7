@@ -177,6 +177,43 @@
     to {opacity: 1; visibility: visible;}
 }
 
+
+
+.navbar__link__first{
+    @media (max-width:730px) {
+    padding-top: 2.25rem;
+    }
+}
+
+.navbar_link {
+    @media (max-width: 768px) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+      
+        &.show {
+          opacity: 1;
+          transform: translateY(0);
+        }
+    }
+  }
+
+.navbar__link.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#myCheckbox:not(:checked) ~ .navbar__menu {
+    @media (max-width:730px) {
+        animation: fadeOutUp 0.3s ease-in-out forwards;
+    }
+}
+
+#myCheckbox:checked ~ .navbar__menu {
+    @media (max-width:730px) {
+        animation: fadeIn 1s ease-in-out;
+    }
+}
 .navbar__menu {
     display: flex;
     align-items: center;
@@ -196,35 +233,6 @@
         @media (prefers-color-scheme: light) {
             background: rgba(255, 255, 255, 0.685);
         }
-    }
-}
-
-.navbar__link__first{
-    @media (max-width:730px) {
-    padding-top: 2.25rem;
-    }
-}
-
-.navbar__link {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.navbar__link.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#myCheckbox:not(:checked) ~ .navbar__menu {
-    @media (max-width:730px) {
-        animation: fadeOutUp 0.3s ease-in-out forwards;
-    }
-}
-
-#myCheckbox:checked ~ .navbar__menu {
-    @media (max-width:730px) {
-        animation: fadeIn 1s ease-in-out;
     }
 }
 
